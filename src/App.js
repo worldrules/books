@@ -8,7 +8,10 @@ function App() {
 
 
     const createBook = (title) => {
-        console.log('need to add book with :', books, title)
+        const updatedBooks = [
+            ...books, { id: 123, title }
+        ];
+        setBooks(updatedBooks);
     };
 
     return <div>
