@@ -18,10 +18,12 @@ function App() {
         setBooks(updatedBooks);
     };
 
-    return <div>
-        {books.length}
-        <BookCreate onCreate={createBook} />
-    </div>;
+    return (
+        <div className="app">
+            <BookList books={books} />
+            <BookCreate onCreate={createBook} />
+        </div>
+    );
 }
 
 export default App;
